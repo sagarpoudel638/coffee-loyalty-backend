@@ -1,0 +1,16 @@
+@rootapi = http://localhost:8000/api/v1
+ GET http://localhost:8000
+
+### Sign up 
+POST {{rootapi}}/auth/signup
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "sagarpoudel638@gmail.com",
+  "phoneNumber": "9876543210",
+  "password": "securePassword123",
+  "profilePicture": "https://example.com/profile.jpg",
+  "role": "customer"
+}
+
